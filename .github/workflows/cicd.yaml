@@ -55,6 +55,7 @@ jobs:
           host: ${{ secrets.SSH_CONNECTION_IP }}
           username: yc-user
           key: ${{ secrets.SSH_KEY }}
+          passphrase: 123
           script: |
             cd /home/yc-user/test_cicd/
             docker pull ghcr.io/npocto-sasha/lab1802:main
