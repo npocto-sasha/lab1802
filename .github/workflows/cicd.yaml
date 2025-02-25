@@ -50,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: SSH connect
-        uses: appleboy/ssh-actions@v1.2.1
+        uses: appleboy/ssh-action@v1.2.1
         with:
           host: ${{ secrets.SSH_CONNECTION_IP }}
           username: yc-user
